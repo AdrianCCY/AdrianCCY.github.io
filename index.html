@@ -20,6 +20,7 @@
     >
       <a-camera gps-new-camera="gpsMinDistance: 5"></a-camera>
       <a-entity
+        id="box"
         material="color: red"
         geometry="primitive: box"
         gps-new-entity-place="latitude: 22.32476097307477; longitude: 114.20342189641029"
@@ -28,3 +29,10 @@
     </a-scene>
   </body>
 </html>
+
+<script>
+  const box = document.getElementById("box");
+  box.addEventListener("click", () => {
+    alert("screw you!");
+  });
+</script>
